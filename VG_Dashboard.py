@@ -48,7 +48,7 @@ fig_pokemon.update_layout(
 
 """
 
-Question 2: What is the top most played games in 2023?
+Question 2: What is the top most played games?
 
 """
 
@@ -92,7 +92,7 @@ app.layout = html.Div(children=[
     ], style={'backgroundColor': '#415A77', 'padding': '20px', 'borderRadius': '10px', 'margin-bottom': '20px'}),
 
     html.Div([
-        html.H2("Top 10 Most Played Games in 2023", style={'textAlign': 'center', 'color': 'white'}),
+        html.H2("Top 10 Most Played Games", style={'textAlign': 'center', 'color': 'white'}),
         dcc.Graph(figure=fig_top_games),
     ], style={'backgroundColor': '#415A77', 'padding': '20px', 'borderRadius': '10px', 'margin-bottom': '20px'}),
 ], style={'backgroundColor': '#0D1B2A', 'padding': '50px 200px'})
