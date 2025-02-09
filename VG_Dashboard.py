@@ -56,8 +56,12 @@ Question 2: What is the top most played games?
 df_cleaned['Plays'] = df_cleaned['Plays'].astype(str).str.replace('K', '000', regex=True).astype(float)
 top_games = df_cleaned.sort_values(by='Plays', ascending=False).head(10)
 
-fig_top_games = px.bar(top_games, x='Title', y='Plays', 
-                       color='Plays', color_continuous_scale='greens')
+fig_top_games = px.bar(top_games, 
+                       x='Title', 
+                       y='Plays', 
+                       color='Plays', 
+                       color_continuous_scale='greens')
+
 fig_top_games.update_layout(xaxis_tickangle=-45, 
                             xaxis_title=None,
                             paper_bgcolor='#778DA9',
